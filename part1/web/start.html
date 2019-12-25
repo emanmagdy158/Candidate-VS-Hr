@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Candidate Home page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+    </head>
+    <body >
+        <table align="center"><tr><td align="center"><h1>welcome</h1></td></tr></table>
+        <div>
+        <form method="post" name="form" action="Validator">
+                <table align="center" border="7" width="200" height="200">
+                    <tr align="center" bgcolor="powderblue">
+                        <td word-wrap:break-word width:1200px>
+                            <input type="hidden" name="signin"/>
+                            <input  type="button"  onclick="window.location.href='Signin.html';"
+                                    name="Sign in" 
+                                    value="Sign in"
+                                    style="background-color: white" 
+                                    onclick ="{document.form.signin.value=this.value;document.form.submit();}">
+                            <strong style="font-size: 35px;"> </strong>
+                        </td>
+                    </tr>
+                    <tr align="center" bgcolor="powderblue">
+                        <td >
+                            <input type="hidden" name="signup"/>
+                            <input  type="button" name="Sign up"
+                                    onclick="window.location.href='Signup.html';"
+                                    value="Sign up" style="background-color: white"
+                                    onclick="{document.form.signup.value=this.value;document.form.submit();}">
+                            <strong style="font-size: 35px;"> </strong>
+                        </td>
+                    </tr>
+                    
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
